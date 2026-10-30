@@ -254,10 +254,10 @@ elif active == "2. Отправка темы":
         cats = ["Инновации / стартап", "Творческий", "Садоводство", "Моделирование", "Научный", "IT", "Спорт", "Другое"]
         d["category"] = st.selectbox("Тип конкурса", cats, index=cats.index(d["category"]))
     with col2:
-        d["audience"] = st.text_input("Возрастная категория необязательно", value=d["audience"])
+        d["audience"] = st.text_input("Возрастная категория (необязательно)", value=d["audience"])
         
-    d["description"] = st.text_area("Описание или требования необязательно", value=d["description"])
-    d["tech"] = st.text_input("Технологии или материалы необязательно", value=d["tech"])
+    d["description"] = st.text_area("Описание или требования (необязательно)", value=d["description"])
+    d["tech"] = st.text_input("Технологии или материалы (необязательно)", value=d["tech"])
     
     st.button("Сохранить и перейти к идеям", type="primary", on_click=save_theme)
     
