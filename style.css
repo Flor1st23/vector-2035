@@ -2,7 +2,7 @@
 [data-testid="stAppViewContainer"] {
     /* Градиент делает картинку чуть светлее, чтобы текст хорошо читался */
     background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), 
-                      url('https://drive.google.com/u/0/drive-viewer/AKGpihYVoeoL4VBts9zh_k7C8IcSjQPVh0T3QvOrdqUFi3m7068ajw52VF3KEgYjjt3oCLvgJmSyE6sbjrn3hSAH5ix6oFhFm6qEHxY=s1600-rw-v1') !important;
+                      url('https://i.oneme.ru/i?r=B09HQN0Qr3SEKX3_pN0HADcfQ0jk7f5D27j4vU0aH1DkGFyXRi8WtLzdX6gWZreCFdMO5n_e63-9DMfNUhYw4jvrCcMFcD_sTbWvmSrsvr4&expires=1793453311303') !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
