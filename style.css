@@ -14,14 +14,30 @@
     background-color: transparent !important;
 }
 
-/* --- ОСНОВНОЙ БЛОК (БЕЗ РАМКИ) --- */
+/* --- ОСНОВНОЙ БЛОК --- */
 .block-container {
     max-width: 1120px !important;
     margin-left: auto !important;
     margin-right: auto !important;
     padding-top: 2.5rem !important;
     padding-bottom: 4rem !important;
-    background-color: transparent !important;
+    
+    /* Возвращаем полупрозрачный белый фон */
+    background-color: rgba(255, 255, 255, 0.85) !important; 
+    border-radius: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Эффект размытия фона под блоком */
+}
+
+/* Убираем скругления и отступы на мобильных устройствах, чтобы блок был на весь экран */
+@media (max-width: 768px) {
+    .block-container {
+        border-radius: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 h1, h2, h3 { color: #1f2937; letter-spacing: -0.01em; }
