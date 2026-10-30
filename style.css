@@ -118,7 +118,12 @@ div[data-testid="stRadio"] label:has(input:checked) p {
 /* --- Уведомления st.info --- */
 div[data-testid="stAlert"] {
     background-color: rgba(239, 246, 255, 0.9) !important;
-    border: 1px solid #bfdbfe !important;
+    /* Убираем жесткую рамку */
+    border: none !important; 
+    /* Закругляем углы, как у карточек */
+    border-radius: 12px !important; 
+    /* Добавляем легкую тень для объема */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05) !important; 
 }
 
 /* --- Поля ввода --- */
