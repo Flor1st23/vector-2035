@@ -2,7 +2,7 @@
 [data-testid="stAppViewContainer"] {
     /* Градиент делает картинку чуть светлее, чтобы текст хорошо читался */
     background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), 
-                      url('https://downloader.disk.yandex.ru/preview/64a4e061ee526d9d390a184c7b2e2e077c54a0a8698b9b851f7c8a6e3509b339/6ae48830/JuR_wUZggYTrGPuLqA5-8mMF8rErloHaBJZZh28m6kmvDwymKBvX24nyxDKtTNab0rBFq79y5fOIdZil-W9Dcg%3D%3D?uid=0&filename=backgroundapp.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v3&is_direct_zip_experiment=1&size=1920x928') !important;
+                      url('https://drive.google.com/drive-viewer/AKGpihbCZCcL10jA-tfN7uJwXVt8xjsfBo8QQ-1_Xc6NaQwlkkyfbxIlK1_Ke3B2RSsTbd5ydjqj7F_9dDB-DxI4dC6pn3tWkl8S7-o=w1920-h900-rw-v1?auditContext=forDisplay') !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
