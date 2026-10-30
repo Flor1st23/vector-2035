@@ -1,0 +1,3 @@
+streamlit
+yandex-cloud-ml-sdk
+python-docx

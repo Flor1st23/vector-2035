@@ -1,0 +1,116 @@
+/* --- ФОН НА ВЕСЬ ЭКРАН --- */
+[data-testid="stAppViewContainer"] {
+    /* Градиент делает картинку чуть светлее, чтобы текст хорошо читался */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), 
+                      url('https://downloader.disk.yandex.ru/preview/64a4e061ee526d9d390a184c7b2e2e077c54a0a8698b9b851f7c8a6e3509b339/6ae48830/JuR_wUZggYTrGPuLqA5-8mMF8rErloHaBJZZh28m6kmvDwymKBvX24nyxDKtTNab0rBFq79y5fOIdZil-W9Dcg%3D%3D?uid=0&filename=backgroundapp.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v3&is_direct_zip_experiment=1&size=1920x928') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+/* Прозрачная верхняя панель */
+[data-testid="stHeader"] {
+    background-color: transparent !important;
+}
+
+/* --- ОСНОВНОЙ БЛОК (БЕЗ РАМКИ) --- */
+.block-container {
+    max-width: 1120px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-top: 2.5rem !important;
+    padding-bottom: 4rem !important;
+    background-color: transparent !important;
+}
+
+h1, h2, h3 { color: #1f2937; letter-spacing: -0.01em; }
+
+/* --- Кнопки --- */
+.stButton > button {
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.15s ease;
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+    color: #1f2937;
+}
+.stButton > button:hover {
+    border-color: #4f46e5;
+    color: #4f46e5;
+}
+.stButton > button[kind="primary"] {
+    background: #4f46e5;
+    border: 1px solid #4f46e5;
+    color: #ffffff !important;
+}
+.stButton > button[kind="primary"]:hover {
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.25);
+}
+
+/* --- Карточки (containers) --- */
+div[data-testid="stVerticalBlockBorderWrapper"] {
+    border-radius: 12px !important;
+    border: 1px solid #e5e7eb !important;
+    /* Полупрозрачный белый фон карточек для эффекта стекла */
+    background: rgba(255, 255, 255, 0.85) !important; 
+    padding: 1rem;
+    backdrop-filter: blur(5px);
+}
+
+/* --- Навигация (Radio в виде пилюль) --- */
+div[data-testid="stRadio"] > div[role="radiogroup"] {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    background: rgba(255, 255, 255, 0.85) !important;
+    padding: 6px !important;
+    border-radius: 12px !important;
+    border: 1px solid #e5e7eb !important;
+    backdrop-filter: blur(5px);
+}
+div[data-testid="stRadio"] label {
+    margin: 0 !important;
+    padding: 8px 16px !important;
+    border-radius: 8px !important;
+    background: transparent !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer;
+}
+/* Прячем стандартный кружок */
+div[data-testid="stRadio"] label > div:first-child {
+    display: none !important; 
+}
+/* Текст неактивной вкладки */
+div[data-testid="stRadio"] label p {
+    color: #4b5563 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    margin: 0 !important;
+}
+/* Активная вкладка */
+div[data-testid="stRadio"] label:has(input:checked) {
+    background: #ffffff !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15) !important;
+}
+div[data-testid="stRadio"] label:has(input:checked) p {
+    color: #4f46e5 !important;
+    font-weight: 600 !important;
+}
+
+/* --- Уведомления st.info --- */
+div[data-testid="stAlert"] {
+    background-color: rgba(239, 246, 255, 0.9) !important;
+    border: 1px solid #bfdbfe !important;
+}
+
+/* --- Поля ввода --- */
+.stTextInput > div > div > input,
+.stTextArea > div > div > textarea,
+.stSelectbox > div > div > div {
+    border-radius: 8px !important;
+    border-color: #d1d5db !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    color: #1f2937 !important;
+}
